@@ -24,6 +24,10 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+    }
 
     // MARK:Memory Warning
     override func didReceiveMemoryWarning() {

@@ -37,17 +37,25 @@
     button.accessibilityLabel = @"Hello";
     [self.view addSubview:button];
 
-    
-    
+
     //new
-    
     UIButton *button1 = [[UIButton alloc]initWithFrame:CGRectMake(30, 100, 150, 10)];
     button1.titleLabel.text = @"buttonn";
     button1.backgroundColor = [UIColor blackColor];
     [button1 addTarget:self action: @selector(asdd) forControlEvents:UIControlEventTouchUpInside];
     button1.accessibilityLabel = @"Hello";
-    [self.view addSubview:button];
+    [self.view addSubview:button1];
 
+    
+    //new
+    UIButton *button3 = [[UIButton alloc]initWithFrame:CGRectMake(30, 100, 150, 10)];
+    button3.titleLabel.text = @"buttonn";
+    button3.backgroundColor = [UIColor blackColor];
+    [button3 addTarget:self action: @selector(asdd) forControlEvents:UIControlEventTouchUpInside];
+    button3.accessibilityLabel = @"Hello";
+    [self.view addSubview:button3];
+
+    
    //view1.accessibilityViewIsModal = YES;
     // Do any additional setup after loading the view, typically from a nib.
 }
