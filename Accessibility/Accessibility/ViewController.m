@@ -15,6 +15,13 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
+    
+    
+    
+    
+
+    
     [super viewDidLoad];
     UILabel *label1 = [[UILabel alloc]initWithFrame:CGRectMake(50, 50, 100, 10)];
     label1.text = @"Hello";
@@ -47,6 +54,14 @@
     [self.view addSubview:button1];
 
     
+    //Added new code
+    UIButton *button2 = [[UIButton alloc]initWithFrame:CGRectMake(30, 100, 150, 10)];
+    button2.titleLabel.text = @"buttonn";
+    button2.backgroundColor = [UIColor blackColor];
+    [button2 addTarget:self action: @selector(asdd) forControlEvents:UIControlEventTouchUpInside];
+    button2.accessibilityLabel = @"Hello";
+    [self.view addSubview:button2];
+
    //view1.accessibilityViewIsModal = YES;
     // Do any additional setup after loading the view, typically from a nib.
 }
